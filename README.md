@@ -110,6 +110,8 @@ Nginx was configured to serve both websites on port 80 without conflicts using p
 
 ##### FoodHub Change: Modified text from "Fresh Food Everyday" to "Delicious Food Delivered Fast".
 
+![](screenshots/2.png)
+
 ![](screenshots/8.png)
 
 
@@ -117,7 +119,9 @@ Nginx was configured to serve both websites on port 80 without conflicts using p
 
 ShopEase Change: Modified text from "Welcome to ShopEase" to "Welcome to ShopEase Online Store".
 
-![](screenshots/1.png)
+![](screenshots/4.png)
+
+![](<screenshots/Screenshot 2026-06-17 161725.png>)
 
 
 ---
