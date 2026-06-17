@@ -56,11 +56,9 @@
 
 #### Two Linux servers were provisioned and configured according to the requirements:
 
-Jenkins Server: Installed Java, Jenkins, and required plugins (Git, Pipeline, SSH Agent). Configured SSH credentials to communicate with the target server securely.
+##### Jenkins Server: Installed Java, Jenkins, and required plugins (Git, Pipeline, SSH Agent). Configured SSH credentials to communicate with the target server securely.
 
-Target Server: Installed Nginx, opened port 80, and ensured the webserver was running and accessible.
-
-SSSSSSSSSSSSSSSSSSSSSSSS
+##### Target Server: Installed Nginx, opened port 80, and ensured the webserver was running and accessible.
 
 ---
 
@@ -74,7 +72,12 @@ ShopEase path: /var/www/html/shopease
 
 Nginx was configured to serve both websites on port 80 without conflicts using path-based routing.
 
-SSSSSSSSSSSSSSSSSS
+![](screenshots/1.png)
+
+---
+
+![](screenshots/3.png)
+
 
 ---
 
@@ -82,13 +85,9 @@ SSSSSSSSSSSSSSSSSS
 
 #### Two separate declarative Jenkins Pipeline jobs were created: FoodHub-Pipeline and ShopEase-Pipeline. Each pipeline successfully clones the respective GitHub repository, copies the files to the target server via SSH, restarts Nginx if necessary, and verifies the deployment.
 
-FoodHub Jenkinsfile Snippet:
-sssssssssssssssssssssssss
+##### FoodHub & ShopEase Jenkinsfile Snippet:
 
----
-
-ShopEase Jenkinsfile Snippet:
-ssssssssssssssssssssssssssss
+![](screenshots/5.png)
 
 ---
 
@@ -96,7 +95,12 @@ ssssssssssssssssssssssssssss
 
 #### Webhooks were successfully configured in both GitHub repositories to trigger the Jenkins pipelines automatically upon any new code push.
 
-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+![](screenshots/6.png)
+
+---
+
+![](screenshots/7.png)
+
 
 ---
 
@@ -104,13 +108,17 @@ SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
 #### To verify the complete CI/CD flow, the required text changes were made to both repositories, committed, and pushed to GitHub. The webhooks successfully triggered the Jenkins jobs, which automatically deployed the new code.
 
-FoodHub Change: Modified text from "Fresh Food Everyday" to "Delicious Food Delivered Fast".
-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+##### FoodHub Change: Modified text from "Fresh Food Everyday" to "Delicious Food Delivered Fast".
+
+![](screenshots/8.png)
+
 
 ---
 
 ShopEase Change: Modified text from "Welcome to ShopEase" to "Welcome to ShopEase Online Store".
-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+![](screenshots/1.png)
+
 
 ---
 
